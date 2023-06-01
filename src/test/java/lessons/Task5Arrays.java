@@ -8,14 +8,14 @@ public class Task5Arrays {
         Scanner sc = new Scanner(System.in);
         int arrSize = sc.nextInt();
         int[] arr = new int[arrSize]; //initial array
-        int[] arrMaxFinal = new int[]{}; //array of max numbers
+        int[] arrMinFinal = new int[]{}; //array of max numbers
 
         //populating initial array
         for(int i=0; i<arrSize; i++){
             arr[i]=(int) (Math.random() * 100);
         }
 
-        arrMaxFinal = findMaxNumbers(arr, arrSize);
+        arrMinFinal = findMinNumbers(arr, arrSize);
 
         //initial array
         for(int y : arr){
@@ -24,14 +24,14 @@ public class Task5Arrays {
 
         //final array
         System.out.println();
-        for(int x : arrMaxFinal){
+        for(int x : arrMinFinal){
             System.out.print(x + " ");
         }
 
 
     }
 
-    public static int[] findMaxNumbers(int[] arr, int arrSize){
+    public static int[] findMinNumbers(int[] arr, int arrSize){
         int count = 0;
         int[] arrMin = new int[arrSize];
 
