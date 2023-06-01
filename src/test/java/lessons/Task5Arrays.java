@@ -8,7 +8,7 @@ public class Task5Arrays {
         Scanner sc = new Scanner(System.in);
         int arrSize = sc.nextInt();
         int[] arr = new int[arrSize]; //initial array
-        int[] arrMinFinal = new int[]{}; //array of max numbers
+        int[] arrMinFinal = new int[]{}; //array of min numbers
 
         //populating initial array
         for(int i=0; i<arrSize; i++){
