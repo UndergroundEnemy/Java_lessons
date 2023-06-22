@@ -1,4 +1,4 @@
-package lessons;
+package lessons.regexandobjects;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class Task4Regex {
     public static void main(String[] args) {
         Client client = new Client("my_email@gmail.com", "127.0.0.0",
-                "Рос!!сия обл. Воронеж!ская р-н Коминт!ерновск!ий д. Воронеж ул.   Бакунина д. 41",
+                "     Рос!!сия обл. Воронеж!ская р-н Коминт!ерновск!ий д. Воронеж ул.   Бакунина д. 41",
                 "https://www.labirint.ru/books/594619/");
 
         System.out.println(ClientValidator.validateEmail(client.getEmail()));
@@ -50,9 +50,10 @@ class ClientValidator {
     }
 
     public static boolean validateAddress(String address){
-        String removeSpaces = address.replaceAll(" {2,}", " ");
-        String removeSpecialChars = removeSpaces.replaceAll("([^А-Яа-я/. 1-9\\-])", "");
-        Matcher matcher = patternAddress.matcher(removeSpecialChars);
+        String s = address.trim().replaceAll(" {2,}", " ").replaceAll("([^А-Яа-я/. 1-9\\-])", "");
+//        String removeSpaces = s.replaceAll(" {2,}", " ");
+//        String removeSpecialChars = removeSpaces.replaceAll("([^А-Яа-я/. 1-9\\-])", "");
+        Matcher matcher = patternAddress.matcher(s);
         return matcher.find();
     }
 

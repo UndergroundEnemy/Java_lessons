@@ -1,4 +1,4 @@
-package lessons;
+package lessons.regexandobjects;
 
 /*
 Написать метод, принимающий на вход слово и возвращающий true если слово является палиндромом.

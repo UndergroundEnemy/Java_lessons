@@ -1,4 +1,4 @@
-package lessons;
+package lessons.regexandobjects;
 /*
 * Реализовать иерархию цветов (розы, гвоздики, тюльпаны, лилии и... что-то на свой вкус).
 

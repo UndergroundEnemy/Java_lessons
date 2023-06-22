@@ -1,4 +1,4 @@
-package lessons;
+package lessons.cycles;
 
 public class Task3Cycles {
     public static void main(String[] args) {

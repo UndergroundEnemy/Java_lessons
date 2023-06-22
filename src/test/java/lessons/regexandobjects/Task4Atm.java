@@ -1,4 +1,4 @@
-package lessons;
+package lessons.regexandobjects;
 /*
 Создать класс описывающий Банкомат.
 

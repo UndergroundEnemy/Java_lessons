@@ -1,10 +1,8 @@
-package lessons;
+package lessons.cycles;
 /*
 * Посчитать сумму цифр числа 7893823445 с помощью цикла do while.
 *
 * */
-
-import java.util.Scanner;
 
 public class Task2Cycles {
     public static void main(String[] args) {
