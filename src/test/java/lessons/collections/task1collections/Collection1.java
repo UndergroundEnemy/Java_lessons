@@ -31,9 +31,7 @@ public class Collection1 {
         double max = 0.0;
         while(iterator.hasNext()){
             double d = iterator.next().getGrade();
-            if(max < d){
-                max = d;
-            }
+            if(max < d) max = d;
         }
 
         System.out.println(max);
